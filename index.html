@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">PORTFOLIO</div>
+    <nav>
+        <ul class="menu">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О себе</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <div class="burger">☰</div>
+    </nav>
+</header>
+
+<!-- Главная -->
+<section id="home" class="block hero">
+    <h1>Elon Musk</h1>
+    <p>Elon Musk is a famous enterpreneur, engineer,and investor.
+        he was born on june 28, (1971) in Prwtoria,South Africa. Later he moved to canada and then to the United States.
+    </p>
+</section>
+
+<!-- О себе -->
+<section id="about" class="block">
+    
+    <p>
+        He is known for creating and leading several of the most important technology companies in the world.
+    </p>
+
+    <div class="skills">
+        <span>SpaceX</span>
+        <span>tesla.inc</span>
+        <span>neuralink</span>
+        <span>the boring company</span>
+       
+</div>
+</section>
+
+<!-- Портфолио -->
+<section id="portfolio" class="block">
+    <h2>projects</h2>
+
+    <div class="grid">
+        <div class="card">Spacex:mpany founded in 2002. it builds rockets and spacecraft and works on missions to the Moon and Mars</div>
+        <div class="card">Tesla, inc A company that builds electric cars, batteries, and solar panels. Musk became CEO in 2008</div>
+        <div class="card">the boring company: A company that builds underground tunnels to reduce traffic in cities</div>
+        <div class="card">neuralink: A company that develops brain-computer interfaces. Its goal is to help  people with neurological problems and, in the future, improve human abilities.</div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="block">
+    <h2>I believe that Elon Musk is a great person because he has made many scientific breakthroughs. The first electric car was Tesla, and he was the first person who started seriously considering Mars as a planet for human life. That’s why he is one of the greatest people in the world.</h2>
+    
+</section>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.menu');
+
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
